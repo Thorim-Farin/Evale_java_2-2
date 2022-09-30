@@ -1,4 +1,4 @@
-package cartographie;
+package functionalInterface.cartographie;
 
 public class Ville {
     private String nom;

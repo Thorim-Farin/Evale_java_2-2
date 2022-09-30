@@ -1,4 +1,4 @@
-package cartographie;
+package functionalInterface.cartographie;
 
 public class Usine {
     private String nom;

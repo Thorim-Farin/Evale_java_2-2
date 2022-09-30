@@ -1,4 +1,4 @@
-package cartographie;
+package functionalInterface.cartographie;
 
 public interface VisiteurCartoInterface {
     public String exportToXML(Ville v);

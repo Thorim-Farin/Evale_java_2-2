@@ -54,6 +54,13 @@ public sealed interface ImmutableList<A> permits Nil, Cons {
         return find(l.tail(), a);
     }
 
+    // Evaluation
+    {
+        static <A> Integer length_visitor(ImmutableList<A> l) {
+            VisitorClasse visiteur = l.accept(new VisitorClasse());
+            return visiteur.length_visitor();
+    }
+    }
 
     public abstract <A,B> ImmutableList<B> map(Function<A, B> f);
 

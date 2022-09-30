@@ -151,7 +151,6 @@ public final class Cons<A> implements ImmutableList<A> {
 
 
 
-
     @Override
     public boolean contains(Object o) {
         if( o == null ) return false;
@@ -178,6 +177,13 @@ public final class Cons<A> implements ImmutableList<A> {
             return new Cons<B>(f.apply( (A) head), new Nil<>());
         }
         return new Cons<B>(f.apply( (A) head), tail.map(f));
+    }
+
+    // Evaluation
+    {
+
+    }
+
     }
 
 }

@@ -1,27 +1,19 @@
 import algebraicdatatype.Resultat;
 import animals.*;
-import cartographie.Usine;
-import cartographie.Ville;
-import cartographie.VisteurCarto;
-import functionalInterface.Operation;
-import functionalInterface.OperationSimple;
+import functionalInterface.cartographie.Usine;
+import functionalInterface.cartographie.Ville;
+import functionalInterface.cartographie.VisteurCarto;
 import immutablelist.Cons;
 import immutablelist.Function;
 import immutablelist.ImmutableList;
 import immutablelist.Nil;
-import jdk.jfr.Unsigned;
 import records.Command;
-import thread.FakeObjet;
-import thread.ThreadTraitement;
 
-import javax.swing.text.html.Option;
 import java.io.IOException;
-import java.lang.reflect.Executable;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.text.DecimalFormat;
 import java.util.*;
-import java.util.concurrent.*;
 import java.util.stream.Stream;
 
 public class Main {
